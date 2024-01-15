@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dragon Database - Version 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/styles/main.css">
+		<link rel="stylesheet" href="assets/styles/main2.css">
+        <link rel="stylesheet" href="assets/styles/main3.css">
+    </head>
+
+    <body>
+        <section data-role="login_screen" data-showing="showing">
+            <form data-role="login_form">
+                <h1>Login</h1>
+                <output data-role="error_message" data-showing="not_showing"></output>
+                <input data-role="email_address" placeholder="enter your email address">
+                <input data-role="attempted_password" placeholder="enter password">
+                <button>Login</button>
+            </form>
+        </section>
+
+        <header>
+            <h1>Dragon Cards</h1>
+            <h2>Find Your Perfect Dragon</h2>
+            <button data-action="logout"></button>
+        </header>
+
+        <label>Summon Dragon by Name</label>
+
+        <select class="select-css" data-action="choose_dragon_by_name" data-role="dragon_name_select">
+            <option selected="all">All</option>
+            <option value="bahamethut">Bahamethut</option>
+            <option value="norslo">Norslo</option>
+            <option value="tagnaurak">Tagnaurak</option>
+            <option value="sprinkles">Sprinkles</option>
+            <option value="sheblonguh">Sheblonguh</option>
+            <option value="languatha">Languatha</option>
+            <option value="jerichombur">Jerichombur</option>
+            <option value="cassidiuma">Cassidiuma</option>
+            <option value="warcomer">Warcomer</option>
+            <option value="omnitrek">Omnitrek</option>
+            <option value="smolder">Smolder</option>
+            <option value="crimson">Crimson</option>
+            <option value="atlas">Atlas</option>
+            <option value="shadow">Shadow</option>
+            <option value="fireball">Fireball</option>
+            <option value="firestorm">Firestorm</option>
+            <option value="isilier">Isilier</option>
+            <option value="eislex">Eislex</option>
+            <option value="xanya">Xanya</option>
+            <option value="frost">Frost</option>
+            <option value="nightingale">Nightingale</option>
+            <option value="blackhole">Blackhole</option>
+            <option value="sonic">Sonic</option>
+            <option value="midnight">Midnight</option>
+            <option value="frealu">Frealu</option>
+            <option value="longlu">Longlu</option>
+            <option value="herma">Herma</option>
+            <option value="hydraysha">Hydraysha</option>
+            <option value="tornado">Tornado</option>
+            <option value="protheus">Protheus</option>
+            <option value="yuxo">Yuxo</option>
+            <option value="sukola">Sukola</option>
+            <option value="ruby">Ruby</option>
+            <option value="restula">Restula</option>
+            <option value="galadi">Galadi</option>
+            <option value="treklor">Treklor</option>
+            <option value="pradumo">Pradumo</option>
+            <option value="dexler">Dexler</option>
+            <option value="samuriilio">Samuriilio</option>
+            <option value="minotaur">Minotaur</option>
+            <option value="ragnorl">Ragnorl</option>
+            <option value="shulmi">Shulmi</option>
+            <option value="castral">Castral</option>
+            <option value="magnum">Magnum</option>
+            <option value="prythus">Prythus</option>
+            <option value="amaron">Amaron</option>
+            <option value="lucianm">Lucian</option>
+            <option value="havarth">Havarth</option>
+        </select>
+
+        <h3 data-role="filter_type">Showing all dragons</h3>
+
+        <section data-role="dragon_info" data-showing="not_showing"></section>
+
+        <script src="lib/jquery-3.4.0.min.js"></script>
+        <script src="main3.mjs" type="module"></script>
+    </body>
+</html>

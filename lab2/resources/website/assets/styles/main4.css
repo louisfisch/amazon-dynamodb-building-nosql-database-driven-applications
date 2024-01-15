@@ -1,0 +1,188 @@
+/*
+* Copyright 2010 Amazon.com, Inc. or its affiliates
+* Copyright 2024 Louis Fischer.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+article {
+    transition: transform 0.48s ease-in-out 0s;
+}
+
+article[data-face="back"] {
+    backface-visibility: hidden;
+    background: #484339;
+    border-radius: 6px;
+    height: 480px;
+    left: 0;
+    margin: 1%;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+    width: 314px;
+}
+
+article[data-face="front"] {
+    backface-visibility: hidden;
+    border-radius: 8px;
+    left: 0;
+    margin: 1%;
+    position: absolute;
+    top: 0;
+}
+
+body [data-edit_dragon] {
+    visibility: hidden;
+}
+
+body[data-editable="editable"] [data-edit_dragon] {
+    visibility: visible;
+}
+
+input[type="range"] {
+    cursor: col-resize;
+    margin-left: 10%;
+    margin-top: 9px;
+    width: 80%;
+}
+
+h4 {
+    color: #c6c8c9;
+    float: right;
+    top: 48px;
+    width: 100%;
+}
+
+label {
+    color: #f1f1f1;
+    font-style: italic;
+    margin: 23px 0px 2px 1px;
+    padding: 0px 0px 0px 16px;
+}
+
+span[data-edit_dragon] {
+    background-color: #dad49f;
+    background-image: url(./images/edit.png);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    padding: 4px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    transition: background-color 0.12s ease-in-out 0s;
+    width: 24px;
+}
+
+span[data-edit_dragon]:hover {
+    background-color: #64c642;
+}
+
+section[data-role="card_wrapper"] {
+    display: inline-block;
+    height: 486px;
+    margin: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    width: 320px;
+}
+
+[data-family] {
+    position: relative;
+}
+
+[data-editing="not_editing"] > article[data-face="front"] {
+    transform: rotateY(0deg);
+}
+
+[data-editing="not_editing"] > article[data-face="back"] {
+    transform: rotateY(180deg);
+}
+
+[data-editing="editing"] > article[data-face="front"] {
+    transform: rotateY(180deg);
+}
+
+[data-editing="editing"] > article[data-face="back"] {
+    transform: rotateY(0deg);
+}
+
+[data-action="save"] {
+    top: 18px;
+    position: relative;
+    left: 12px
+}
+
+[data-action="cancel"] {
+    left: 18px;
+    position: relative;
+    top: 18px;
+}
+
+[data-action="save"] > i {
+    color: #64c642;
+    cursor: pointer;
+}
+
+[data-action="cancel"] > i {
+    color: #f50707;
+    cursor: pointer;
+}
+
+[data-face="back"] h3 {
+    color: #f1f1f1;
+    font-size: 37px;
+    font-style: italic;
+    margin-bottom: 46px;
+    margin-left: -9px;
+    margin-top: 7px;
+    margin-top: -18px;
+    outline: none;
+    text-align: right;
+}
+
+[data-face="back"] p {
+    border: 1px dashed #86847d;
+    color: #f1f1f1;
+    font-size: 20px;
+    font-style: italic;
+    height: 164px;
+    outline: none;
+    overflow: auto;
+}
+
+[data-role="email_address"] {
+    background-color: #434343;
+    border: 1px solid #999797;
+    border-radius: 4px;
+    color: whitesmoke;
+    display: block;
+    font-size: 18px;
+    margin: 24px;
+    outline: white;
+    padding: 12px 24px;
+    width: 272px;
+}
+
+[data-role="attempted_password"] {
+    background-color: #434343;
+    padding: 12px 24px;
+    font-size: 18px;
+    width: 272px;
+    border-radius: 4px;
+    border: 1px solid #999797;
+    color: whitesmoke;
+    outline: white;
+    display: block;
+    margin: 24px;
+}
