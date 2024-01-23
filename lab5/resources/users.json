@@ -1,0 +1,18 @@
+[
+    {
+        "username": "davey65",
+        "first_name": "dave",
+        "email_address": "dave@dragoncardgame001.com",
+        "temp_password": "apple"
+    },{
+        "username": "jon77",
+        "first_name": "jon",
+        "email_address": "jon@dragoncardgame001.com",
+        "temp_password": "banana"
+    },{
+        "username": "evan33",
+        "first_name": "evan",
+        "email_address": "evan@dragoncardgame001.com",
+        "temp_password": "orange"
+    }
+]
